@@ -14,7 +14,7 @@ function App() {
     e.preventDefault();
     setVisitorName(image.name);
     const visitorImageName=uuid.v4();
-    fetch(`https://8hpjvto9t1.execute-api.ap-south-1.amazonaws.com/dev/visitors-images/${visitorImageName}.jpeg` ,{
+    fetch(`https://5kqe7eg261.execute-api.ap-southeast-1.amazonaws.com/dev/visitors-images/${visitorImageName}.jpeg` ,{
     
     method:'PUT',
       headers:{
