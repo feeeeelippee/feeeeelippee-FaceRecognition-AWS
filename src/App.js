@@ -28,7 +28,7 @@ function App() {
         setUploadResultMessage(`Hi ${response['firstName']} ${response['lastName']},welcome to work`)
       }else{
         setAuth(false);
-        setUploadResultMessage(`Authentication Failed`)
+        setUploadResultMessage(`Authentication Failed`);
       }
     }).catch(error=>{
       setAuth(false);
