@@ -39,7 +39,7 @@ function App() {
   }
 
   async function authenticate(visitorImageName){
-    const requestUrl='https://8nv235n6xc.execute-api.ap-southeast-1.amazonaws.com/dev/employee?'+new URLSearchParams({
+    const requestUrl='https://8nv235n6xc.execute-api.ap-southeast-1.amazonaws.com/dev/employee-info?'+new URLSearchParams({
       objectKey:`${visitorImageName}.jpeg`
     });
     return await fetch(requestUrl,{
