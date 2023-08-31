@@ -14,7 +14,7 @@ function App() {
     e.preventDefault();
     setVisitorName(image.name);
     const visitorImageName=uuid.v4();
-    fetch(`https://5kqe7eg261.execute-api.ap-southeast-1.amazonaws.com/dev/visitors-images/${visitorImageName}.jpeg` ,{
+    fetch(`https://8nv235n6xc.execute-api.ap-southeast-1.amazonaws.com/dev/employees-2-images/${visitorImageName}.jpeg` ,{
     
     method:'PUT',
       headers:{
@@ -32,14 +32,14 @@ function App() {
       }
     }).catch(error=>{
       setAuth(false);
-      setUploadResultMessage(`There is an error in authentication process,try again llater.`)
+      setUploadResultMessage(`There is an error in authentication process,try again later.`)
       console.error(error);
     })
 
   }
 
   async function authenticate(visitorImageName){
-    const requestUrl='https://5kqe7eg261.execute-api.ap-southeast-1.amazonaws.com/dev/employee?'+new URLSearchParams({
+    const requestUrl='https://8nv235n6xc.execute-api.ap-southeast-1.amazonaws.com/dev/employee?'+new URLSearchParams({
       objectKey:`${visitorImageName}.jpeg`
     });
     return await fetch(requestUrl,{
