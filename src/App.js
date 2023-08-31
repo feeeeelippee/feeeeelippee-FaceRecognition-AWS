@@ -21,7 +21,7 @@ function App() {
         'Content-Type':'image/jpeg'
       },
       body:image
-    }).then(async()=>{
+    });.then(async()=>{
       const response=await authenticate(visitorImageName);
       if(response.Message==='Success'){
         setAuth(true);
